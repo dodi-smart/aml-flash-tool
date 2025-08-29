@@ -27,7 +27,7 @@ echo "Removing USB rules..."
 
 if [[ "$DISTRIB_RELEASE" =~ "12" ]]; then
         RULE="/etc/udev/rules.d/70-persistent-usb-ubuntu12.rules"
-elif [[ "$DISTRIB_RELEASE" =~ "14" || "$DISTRIB_RELEASE" =~ "16" || "$DISTRIB_RELEASE" =~ "18" || "$DISTRIB_RELEASE" =~ "20" ]]; then
+elif [[ "$DISTRIB_RELEASE" =~ "14" || "$DISTRIB_RELEASE" =~ "16" || "$DISTRIB_RELEASE" =~ "18" || "$DISTRIB_RELEASE" =~ "20" || "$DISTRIB_RELEASE" =~ "24" ]]; then
         RULE="/etc/udev/rules.d/70-persistent-usb-ubuntu14.rules"
 else
         RULE="/etc/udev/rules.d/70-persistent-usb-ubuntu14.rules"
